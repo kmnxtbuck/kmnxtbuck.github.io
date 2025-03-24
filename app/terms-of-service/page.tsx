@@ -2,7 +2,7 @@ import React from "react";
 
 const TermsOfService = () => {
   return (
-        <div className="size-full place-self-center p-20 bg-transparent border-none text-[#FFFF99] drop-shadow-lg overflow-scroll">
+        <div className="size-full place-self-center p-20 bg-transparent border-none text-[#FFFF99] drop-shadow-lg">
                 <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
                 <p className="mb-4 italic">Effective Date: Mar 25, 2025</p>
 
