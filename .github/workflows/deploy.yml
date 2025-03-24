@@ -26,8 +26,8 @@ jobs:
 
       - name: Build and Export static site
         run: |
+          npm i
           npm run build
-          npm run export
 
       - name: Copy CNAME to out/
         run: cp public/CNAME out/CNAME
