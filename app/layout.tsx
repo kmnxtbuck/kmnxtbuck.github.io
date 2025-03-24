@@ -9,8 +9,8 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 <div className="bg-[url(/bg-2xl.jpg)] 
                                 bg-cover bg-center 
                                 grayscale-75 -z-75 body flex flex-col h-full">
-                    <main className="flex-grow max-h-4/5">{children}</main>
-                    <footer className="max-h-1/5"><Footer /></footer> 
+                    <main className="flex-grow">{children}</main>
+                    <footer><Footer /></footer> 
                 </div>
             </body>
         </html>
