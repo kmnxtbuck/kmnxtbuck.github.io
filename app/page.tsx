@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import SignUpForm from "@/components/SignUpForm/SignUpForm";
 import { useEffect } from 'react';
-
+ 
 const LandingPage = () => {
     useEffect(() => {
         // Fire the Google Ads conversion event
