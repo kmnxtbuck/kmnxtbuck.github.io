@@ -1,6 +1,12 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import SignUpForm from "@/components/SignUpForm/SignUpForm";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'NxtBuck | Home',
+  description: 'Track Your Ad Spend ROI in Real-Time',
+}
 
 const LandingPage = () => {
   return (
