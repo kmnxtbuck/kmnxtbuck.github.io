@@ -42,7 +42,7 @@ export default function SignUpForm() {
     setStatus("Submitting...");
 
     try {
-      const res = await fetch("https://your-api-gateway-url.amazonaws.com/prod/submit", {
+      const res = await fetch("https://9jd4rekb97.execute-api.us-east-1.amazonaws.com/prod/submit", {
         method: "POST",
         body: JSON.stringify({ ...values, company }),
         headers: {
