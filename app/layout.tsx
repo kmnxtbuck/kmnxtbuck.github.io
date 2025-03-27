@@ -1,6 +1,6 @@
 // These styles apply to every route in the application
 import Script from 'next/script';
-import './globals.css'
+import './globals.css';
 
 export default function RootLayout({ children } : { children: React.ReactNode }) {
     return (
@@ -8,16 +8,18 @@ export default function RootLayout({ children } : { children: React.ReactNode })
             <head>
                 {/* GA Script */}
                 <Script
-                    src={`https://www.googletagmanager.com/gtag/js?id=G-75C7SVN9J5`}
+                    src="https://www.googletagmanager.com/gtag/js?id=G-75C7SVN9J5"
                     strategy="afterInteractive"
                 />
-                <Script id="ga-init" strategy="afterInteractive">
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-75C7SVN9J5');
-                    `}
+                {/* Init both GA and Ads in one config block */}
+                <Script id="gtag-init" strategy="afterInteractive">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    window.gtag = function(){ dataLayer.push(arguments); };
+                    window.gtag('js', new Date());
+                    window.gtag('config', 'G-75C7SVN9J5');
+                    window.gtag('config', 'AW-16958297809');
+                `}
                 </Script>
             </head>
             <body>

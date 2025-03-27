@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import SignUpForm from "@/components/SignUpForm/SignUpForm";
 import type { Metadata } from 'next'
+import { useEffect } from 'react';
  
 export const metadata: Metadata = {
   title: 'NxtBuck | Home',
@@ -9,6 +10,15 @@ export const metadata: Metadata = {
 }
 
 const LandingPage = () => {
+    useEffect(() => {
+        // Fire the Google Ads conversion event
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', {
+            send_to: 'AW-16958297809/eQdHCIS907AaENGtrJY_',
+          });
+        }
+      }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-white flex flex-col items-center justify-center px-6 py-12">
       <div className="text-center max-w-2xl">
