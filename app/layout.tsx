@@ -1,6 +1,12 @@
 // These styles apply to every route in the application
 import Script from 'next/script';
 import './globals.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'NxtBuck | Home',
+    description: 'Track Your Ad Spend ROI in Real-Time',
+  };
 
 export default function RootLayout({ children } : { children: React.ReactNode }) {
     return (
