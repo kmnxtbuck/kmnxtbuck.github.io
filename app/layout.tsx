@@ -29,9 +29,8 @@ export default function RootLayout({ children } : { children: React.ReactNode })
                 </Script>
             </head>
             <body>
-                <div className="bg-[url(/bg-2xl.jpg)] 
-                                bg-cover bg-center 
-                                grayscale-75 -z-75 body flex flex-col h-screen">
+                <div className="bg-gradient-to-b from-slate-950 to-slate-900 
+                                body flex flex-col h-screen">
                     <main className="flex-grow overflow-auto">{children}</main>
                     {/*<footer><Footer /></footer>*/}
                 </div>
