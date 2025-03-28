@@ -16,7 +16,7 @@ const LandingPage = () => {
       }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-white flex flex-col items-center justify-center px-4">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-white flex flex-col items-center justify-center px-4 py-4">
       <div className="text-center w-full">
         <h1 className="text-3xl font-bold leading-tight mb-6">
           Track ROAS Across Platforms in Real-Time
